@@ -1,0 +1,11 @@
+<div class="grid">
+{{#each result}}
+    <div class="container">
+        <img class="artistImg" src="{{this.images.[0].url}}" />
+        <p class="album_name">{{this.name}}</p>   
+        <button class="button_card" type="submit"><a href="/traks/{{this.id}}">View Tracks</a></button>       
+    </div>
+    {{/each}}
+</div> 
+
+<button type="submit"><a href="albums/:id?offset=6">NEXT ALBUMS</a></button>
